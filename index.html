@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manu Cabral | Líder Natura & Avon</title>
+<meta name="description" content="Seja uma consultora Natura & Avon com a Líder Manu Cabral. Sem kit inicial, loja online 24h, treinamentos e alta lucratividade.">
+<meta name="theme-color" content="#fde8ef">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lidermanucabral.vercel.app/">
+<meta property="og:site_name" content="Manu Cabral | Líder Natura & Avon">
+<meta property="og:title" content="Manu Cabral | Líder Natura & Avon">
+<meta property="og:description" content="Seja uma consultora Natura & Avon. Cadastre-se comigo!">
+<meta property="og:image" content="https://lidermanucabral.vercel.app/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/natura.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fdeef3; --bg2:#fbdfe9; --rose:#c94a80; --rose-d:#8e2a57; --ink:#3b2430;
+  --muted:#7b5b68; --line:#f3cadb; --white:#fff;
+  --grad:linear-gradient(135deg,#d9568d 0%,#a8326a 100%);
+  --brand:linear-gradient(135deg,#f28a22,#e83e8c 55%,#7a00c8);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Poppins',system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-tap-highlight-color:transparent}
+img{display:block;max-width:100%}
+a{color:inherit}
+.container{width:min(1160px,92%);margin:0 auto}
+.serif{font-family:'Playfair Display',serif}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:#fdeef3e6;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand b{font-family:'Playfair Display',serif;font-size:1.35rem;color:var(--rose-d)}
+.brand span{display:block;font-size:.68rem;letter-spacing:2px;text-transform:uppercase;color:var(--muted);margin-top:-4px}
+.menu{display:flex;gap:28px;list-style:none}
+.menu a{text-decoration:none;font-size:.92rem;font-weight:500;color:var(--muted)}
+.menu a:hover{color:var(--rose-d)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;font-weight:600;
+  border-radius:999px;padding:14px 26px;font-size:.98rem;transition:transform .2s ease,box-shadow .2s ease;white-space:nowrap}
+.btn svg{flex:0 0 auto}
+.btn-primary{background:var(--grad);color:#fff;box-shadow:0 12px 28px -12px #a8326aaa}
+.btn-ghost{background:#fff;color:var(--rose-d);border:1.5px solid var(--line)}
+.btn-sm{padding:10px 18px;font-size:.88rem}
+@media (hover:hover){.btn:hover{transform:translateY(-2px)}}
+.btn:active{transform:scale(.97)}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(700px 420px at 85% 10%,#ffffff 0%,transparent 60%),
+  radial-gradient(600px 400px at 0% 100%,#f9cfe0 0%,transparent 60%),var(--bg)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:56px;padding:72px 0 88px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:7px 16px;font-size:.82rem;font-weight:600;color:var(--rose-d)}
+.hero h1{font-family:'Playfair Display',serif;font-size:clamp(2.8rem,6vw,4.6rem);line-height:1.02;color:var(--rose-d);margin-top:20px}
+.hero .role{font-size:clamp(1rem,1.6vw,1.2rem);letter-spacing:4px;text-transform:uppercase;color:var(--muted);font-weight:600;margin-top:12px}
+.hero p.lead{font-size:1.12rem;color:var(--muted);margin-top:22px;max-width:520px}
+.hero p.lead strong{color:var(--ink)}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.chips span{background:#ffffffb3;border:1px solid var(--line);border-radius:12px;padding:9px 14px;font-size:.88rem;font-weight:500}
+
+.photo{position:relative;justify-self:center;width:min(440px,100%)}
+.photo .frame{border-radius:220px 220px 28px 28px;overflow:hidden;aspect-ratio:4/5;padding:6px;background:var(--brand);box-shadow:0 40px 70px -35px #8e2a57aa}
+.photo .frame img{width:100%;height:100%;object-fit:cover;object-position:center 25%;border-radius:214px 214px 22px 22px}
+.photo .badge{position:absolute;left:-28px;bottom:42px;background:#fff;border-radius:18px;padding:14px 18px;box-shadow:0 18px 40px -18px #8e2a5777;display:flex;align-items:center;gap:12px}
+.photo .badge img{height:38px;width:auto}
+.photo .badge i{width:1px;height:30px;background:var(--line)}
+.photo .badge .av{height:15px}
+.photo .sign{position:absolute;right:-6px;top:34px;background:#fff;border-radius:999px;padding:8px 18px;font-family:'Great Vibes',cursive;font-size:1.6rem;color:var(--rose);box-shadow:0 14px 30px -16px #8e2a5788}
+
+/* Logos strip */
+.strip{background:#fff;border-block:1px solid var(--line)}
+.strip .container{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:40px;padding:30px 0}
+.strip .l{display:flex;justify-content:flex-end}
+.strip .r{display:flex;justify-content:flex-start}
+.strip .l img{height:66px;width:auto}
+.strip .r img{height:28px;width:auto}
+.strip .amp{font-family:'Playfair Display',serif;font-style:italic;font-size:2.2rem;color:var(--rose)}
+
+/* Sections */
+section.block{padding:96px 0}
+.head{text-align:center;max-width:640px;margin:0 auto 52px}
+.head small{display:block;font-size:.8rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--rose)}
+.head h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,2.8rem);line-height:1.15;color:var(--rose-d);margin-top:10px}
+.head p{color:var(--muted);margin-top:12px}
+
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;height:100%;transition:transform .25s ease,box-shadow .25s ease}
+@media (hover:hover){.card:hover{transform:translateY(-4px);box-shadow:0 22px 40px -26px #8e2a5799}}
+.card .ico{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;font-size:1.8rem;background:var(--bg)}
+.card h3{font-size:1.05rem;font-weight:600;margin-top:16px;color:var(--ink)}
+.card p{font-size:.9rem;color:var(--muted);margin-top:6px}
+
+.steps{background:linear-gradient(180deg,var(--bg2),var(--bg))}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.step{background:#fff;border-radius:24px;padding:36px 30px;border:1px solid var(--line);position:relative;height:100%}
+.step .n{font-family:'Playfair Display',serif;font-size:3.2rem;line-height:1;background:var(--brand);-webkit-background-clip:text;background-clip:text;color:transparent}
+.step h3{font-size:1.15rem;margin-top:14px}
+.step p{color:var(--muted);font-size:.95rem;margin-top:8px}
+
+/* About */
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-photo{border-radius:28px;overflow:hidden;aspect-ratio:1/1;box-shadow:0 30px 60px -34px #8e2a57aa}
+.about-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.about h2{font-family:'Playfair Display',serif;font-size:clamp(2rem,4vw,2.8rem);color:var(--rose-d);line-height:1.15;margin-top:10px}
+.about small{font-size:.8rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--rose)}
+.about p{color:var(--muted);margin-top:16px;font-size:1.03rem}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:28px}
+.info div{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px;height:100%}
+.info b{display:block;font-size:.78rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--rose)}
+.info span{font-weight:600;font-size:1.05rem}
+.about .btn{margin-top:30px}
+
+/* CTA */
+.cta{padding:0 0 96px}
+.cta-box{background:var(--grad);border-radius:32px;padding:64px 40px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-box::before,.cta-box::after{content:"";position:absolute;border-radius:50%;background:#ffffff14}
+.cta-box::before{width:340px;height:340px;top:-160px;left:-120px}
+.cta-box::after{width:280px;height:280px;bottom:-140px;right:-90px}
+.cta-box .script{font-family:'Great Vibes',cursive;font-size:clamp(2.4rem,5vw,3.6rem);line-height:1.1;position:relative}
+.cta-box p{opacity:.92;margin-top:12px;position:relative}
+.cta-box .phone{font-size:1.6rem;font-weight:700;margin-top:18px;letter-spacing:.5px;position:relative}
+.cta-box .btn{margin-top:26px;background:#fff;color:var(--rose-d);position:relative}
+
+/* Footer */
+footer{background:#fff;border-top:1px solid var(--line);padding:44px 0 32px;text-align:center}
+.f-logos{display:flex;align-items:center;justify-content:center;gap:24px}
+.f-logos img:first-child{height:48px;width:auto}
+.f-logos img:last-child{height:20px;width:auto}
+.f-logos i{width:1px;height:34px;background:var(--line)}
+footer h4{font-family:'Playfair Display',serif;font-size:1.3rem;color:var(--rose-d);margin-top:20px}
+.f-links{display:flex;justify-content:center;gap:22px;flex-wrap:wrap;margin-top:12px;font-size:.92rem}
+.f-links a{text-decoration:none;color:var(--muted)}
+.f-links a:hover{color:var(--rose-d)}
+footer .copy{font-size:.78rem;color:var(--muted);margin-top:22px;opacity:.8}
+
+/* Floating WhatsApp */
+.float{position:fixed;right:20px;bottom:20px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;color:#fff;box-shadow:0 14px 30px -10px #1a9e4b;animation:pulse 2.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 #25d36680}70%{box-shadow:0 0 0 16px #25d36600}100%{box-shadow:0 0 0 0 #25d36600}}
+@media (prefers-reduced-motion:reduce){.float{animation:none}html{scroll-behavior:auto}}
+
+/* Responsive */
+@media (max-width:960px){
+  .menu{display:none}
+  .hero-grid{grid-template-columns:1fr;text-align:center;padding:44px 0 64px;gap:44px}
+  .hero p.lead{margin-inline:auto}
+  .hero-ctas,.chips{justify-content:center}
+  .photo{order:-1;width:min(340px,86%)}
+  .photo .badge{left:50%;transform:translateX(-50%);bottom:-26px}
+  .photo .sign{right:-10px;top:20px;font-size:1.35rem}
+  .grid4{grid-template-columns:repeat(2,1fr);gap:14px}
+  .grid3{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr;gap:36px;text-align:center}
+  .about-photo{max-width:420px;margin:0 auto}
+  section.block{padding:72px 0}
+}
+@media (max-width:560px){
+  .nav{height:64px}
+  .brand img{display:none}
+  .nav .btn-sm span{display:none}
+  .nav .btn-sm{padding:10px 12px}
+  .hero-ctas .btn{width:100%}
+  .card{padding:22px 14px}
+  .card .ico{width:54px;height:54px;font-size:1.5rem}
+  .card h3{font-size:.95rem}
+  .card p{font-size:.8rem}
+  .strip .container{gap:18px;padding:22px 0}
+  .strip .l img{height:48px}
+  .strip .r img{height:20px}
+  .strip .amp{font-size:1.6rem}
+  .info{grid-template-columns:1fr 1fr;gap:10px}
+  .info span{font-size:.92rem}
+  .cta-box{padding:52px 22px;border-radius:26px}
+  .cta-box .phone{font-size:1.35rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#inicio">
+      <img src="img/natura.png" alt="" height="34" style="height:34px;width:auto">
+      <div><b>Manu Cabral</b><span>Líder Natura &amp; Avon</span></div>
+    </a>
+    <ul class="menu">
+      <li><a href="#vantagens">Vantagens</a></li>
+      <li><a href="#como-funciona">Como funciona</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+    <a class="btn btn-primary btn-sm" href="https://wa.me/558192676425?text=Ol%C3%A1%20Manu!%20Quero%20ser%20consultora%20Natura%20%26%20Avon." target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg>
+      <span>Cadastre-se</span>
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">✨ Seja uma consultora Natura &amp; Avon</span>
+      <h1>Manu Cabral</h1>
+      <p class="role">Líder Natura &amp; Avon</p>
+      <p class="lead">🚀 <strong>Te instruo a ser uma consultora de sucesso.</strong> Cadastre-se comigo, sem kit inicial, e comece a vender com loja online 24h, treinamentos e alta lucratividade.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="https://wa.me/558192676425?text=Ol%C3%A1%20Manu!%20Quero%20ser%20consultora%20Natura%20%26%20Avon." target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg>
+          Quero ser consultora
+        </a>
+        <a class="btn btn-ghost" href="https://www.instagram.com/manu_cabral_lider_de_negocios" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          Ver Instagram
+        </a>
+      </div>
+      <div class="chips">
+        <span>🍀 Grupo 25906</span>
+        <span>📍 Setor Sossego</span>
+        <span>🎁 Sem kit inicial</span>
+      </div>
+    </div>
+
+    <div class="photo">
+      <div class="frame"><img src="img/manu-hero.jpg" alt="Manu Cabral, Líder Natura e Avon" width="960" height="1200"></div>
+      <div class="sign">Líder Manu Cabral</div>
+      <div class="badge"><img src="img/natura.png" alt="Natura"><i></i><img class="av" src="img/avon.png" alt="Avon"></div>
+    </div>
+  </div>
+</section>
+
+<!-- LOGOS -->
+<div class="strip">
+  <div class="container">
+    <div class="l"><img src="img/natura.png" alt="Natura"></div>
+    <div class="amp">&amp;</div>
+    <div class="r"><img src="img/avon.png" alt="Avon"></div>
+  </div>
+</div>
+
+<!-- VANTAGENS -->
+<section class="block" id="vantagens">
+  <div class="container">
+    <div class="head">
+      <small>Cadastre-se comigo</small>
+      <h2>Vantagens de ser consultora Natura &amp; Avon</h2>
+      <p>Tudo o que você precisa para começar e crescer, com o apoio de uma líder do seu lado.</p>
+    </div>
+    <div class="grid4">
+      <div class="card"><div class="ico">🎁</div><h3>Sem kit inicial</h3><p>Comece sem precisar investir em kit.</p></div>
+      <div class="card"><div class="ico">✨</div><h3>Produtos inovadores</h3><p>Duas marcas amadas pelos clientes.</p></div>
+      <div class="card"><div class="ico">💳</div><h3>Conta digital gratuita</h3><p>Receba e gerencie seus ganhos.</p></div>
+      <div class="card"><div class="ico">🛍️</div><h3>Loja online 24h</h3><p>Venda a qualquer hora, de onde estiver.</p></div>
+      <div class="card"><div class="ico">📈</div><h3>Plano de crescimento</h3><p>Evolua e aumente seus resultados.</p></div>
+      <div class="card"><div class="ico">🎓</div><h3>Treinamentos</h3><p>Aprenda a vender com quem entende.</p></div>
+      <div class="card"><div class="ico">💰</div><h3>Alta lucratividade</h3><p>Ganhos que fazem diferença no mês.</p></div>
+      <div class="card"><div class="ico">💝</div><h3>Brindes exclusivos</h3><p>Mimos especiais para consultoras.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section class="block steps" id="como-funciona">
+  <div class="container">
+    <div class="head">
+      <small>Passo a passo</small>
+      <h2>Como começar</h2>
+      <p>Em poucos passos você já faz parte do time.</p>
+    </div>
+    <div class="grid3">
+      <div class="step"><div class="n">01</div><h3>Chame no WhatsApp</h3><p>Fale comigo pelo (81) 99267-6424 e tire todas as suas dúvidas.</p></div>
+      <div class="step"><div class="n">02</div><h3>Faça seu cadastro</h3><p>Eu te ajudo com o cadastro, sem kit inicial e sem complicação.</p></div>
+      <div class="step"><div class="n">03</div><h3>Comece a vender</h3><p>Com treinamentos e acompanhamento, você vende desde o primeiro dia.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section class="block about" id="sobre">
+  <div class="container about-grid">
+    <div class="about-photo"><img src="img/manu.jpg" alt="Manu Cabral" width="800" height="800"></div>
+    <div>
+      <small>Sua líder</small>
+      <h2>Prazer, eu sou a Manu Cabral</h2>
+      <p>Sou Líder de Negócios Natura &amp; Avon e vou te acompanhar em cada passo. 🚀 Te instruo a ser uma consultora de sucesso, com orientação, treinamentos e apoio de verdade.</p>
+      <div class="info">
+        <div><b>Grupo</b><span>🍀 25906</span></div>
+        <div><b>Setor</b><span>📍 Sossego</span></div>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/558192676425?text=Ol%C3%A1%20Manu!%20Quero%20fazer%20parte%20do%20seu%20time." target="_blank" rel="noopener">Quero fazer parte do time</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contato">
+  <div class="container">
+    <div class="cta-box">
+      <div class="script">Venha fazer parte do nosso time</div>
+      <p>Cadastre-se comigo e seja uma consultora Natura &amp; Avon.</p>
+      <div class="phone">(81) 99267-6424</div>
+      <a class="btn" href="https://wa.me/558192676425?text=Ol%C3%A1%20Manu!%20Quero%20ser%20consultora%20Natura%20%26%20Avon." target="_blank" rel="noopener">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="#25d366"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg>
+        Cadastrar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="f-logos"><img src="img/natura.png" alt="Natura"><i></i><img src="img/avon.png" alt="Avon"></div>
+    <h4>Manu Cabral · Líder Natura &amp; Avon</h4>
+    <div class="f-links">
+      <a href="https://wa.me/558192676425" target="_blank" rel="noopener">WhatsApp (81) 99267-6424</a>
+      <a href="https://www.instagram.com/manu_cabral_lider_de_negocios" target="_blank" rel="noopener">@manu_cabral_lider_de_negocios</a>
+      <span>🍀 Grupo 25906 · 📍 Setor Sossego</span>
+    </div>
+    <p class="copy">© 2026 Manu Cabral · Consultoria Natura &amp; Avon</p>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/558192676425?text=Ol%C3%A1%20Manu!%20Quero%20ser%20consultora%20Natura%20%26%20Avon." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+</body>
+</html>
